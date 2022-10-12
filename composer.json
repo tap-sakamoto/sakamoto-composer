@@ -1,0 +1,5 @@
+{
+    "require": {
+        "omoon/php-kansai-dialect": "^0.1.1"
+    }
+}
