@@ -1,5 +1,6 @@
 {
     "require": {
-        "omoon/php-kansai-dialect": "^0.1.1"
+        "omoon/php-kansai-dialect": "^0.1.1",
+        "japanese-holiday/japanese-holiday": "^2.0"
     }
 }
