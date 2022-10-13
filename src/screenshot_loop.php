@@ -4,6 +4,7 @@ require_once __DIR__ . '/WebsiteScreenshot.php';
 
 try {
     $getScreenshot = new WebsiteScreenshot();
+    $getScreenshot->changeScreenshotSize(null,4000);
     $getScreenshot->saveScreenshot(null);
 
 } catch (Exception $ex) {
