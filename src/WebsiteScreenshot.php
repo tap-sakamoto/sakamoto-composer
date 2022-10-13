@@ -44,7 +44,7 @@ class WebsiteScreenshot
      * @throws CommunicationException
      * @throws NoResponseAvailable
      */
-    public function changeScreenshotSize(?int $width =null, ?int $height=null): void
+    public function changeScreenshotSize(?int $width = null, ?int $height = null): void
     {
         $setWidth = $width ?? 1280;
         $setHeight = $height ?? 1280;
@@ -62,16 +62,17 @@ class WebsiteScreenshot
      * @throws ScreenshotFailed
      * @throws ResponseHasError
      */
-    public function saveScreenshot(?string $userDirName=null): void
+    //public function saveScreenshot(?string $userDirName = null, array $pages): void
+    public function saveScreenshot(string $userDirName, array $pages): void
     {
         $putDirName = $userDirName ?? 'contentImages';
-        //対象URL設定
-        $pages = [
-            'google' => 'https://www.google.com',
-            'yahoo' => 'https://www.yahoo.co.jp/',
-            'apple' => 'https://apple.com/',
-            'facebook' => 'https://www.facebook.com/',
-        ];
+//        //対象URL設定
+//        $pages = [
+//            'google' => 'https://www.google.com',
+//            'yahoo' => 'https://www.yahoo.co.jp/',
+//            'apple' => 'https://apple.com/',
+//            'facebook' => 'https://www.facebook.com/',
+//        ];
 
         //スクリーンショット取得
         foreach ($pages as $name => $url) {
